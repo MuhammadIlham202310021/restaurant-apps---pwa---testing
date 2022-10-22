@@ -1,0 +1,121 @@
+
+@media screen and (max-width: 499px) {
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease;
+  }
+
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header {
+    display: block;
+    margin: 0px;
+  }
+
+  .header__inner {
+    text-align: center;
+  }
+
+  .hero {
+    height: 50%;
+  }
+
+	.skip-link:focus {
+		top: 150px
+	}
+
+  .motto {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+  }
+}
+
+
+@media screen and (min-width: 500px) {
+	.header {
+		margin: 0px;
+	}
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__title {
+    text-align: center;
+  }
+
+	.card-content {
+		padding: 16px 32px 32px 32px
+	}
+
+	.card-link {
+		font-size: 18px
+	}
+
+	.card-description {
+		font-size: 14px
+	}
+
+	.katalog {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.header {
+		margin: 0px;
+	}
+
+  .navbar {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+	.katalog {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.header {
+		margin: 0px 100px 0px 100px;
+	}
+
+  .navbar {
+    margin: 0 auto;
+  }
+
+	.katalog {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+} 
+
+@media screen and (min-width: 1200px) {
+  .katalog {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
